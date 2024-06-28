@@ -10,7 +10,7 @@
     "scripts": {
         "test": "jest --config jestconfig.json",
         "build": "tsc",
-        "postinstall": "./node_modules/typescript/bin/tsc"
+        "postinstall": "npm run build"
     },
     "repository": {
         "type": "git",
