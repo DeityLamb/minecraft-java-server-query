@@ -29,6 +29,8 @@ export const MotdFormatCodes = {
 
 export function toRaw(motd: any, useAmpersand?: boolean): string {
 
+    if (!motd) return "";
+    
     if (typeof motd === "string") return motd;
     let text = (motd?.text ?? "") + `${(useAmpersand ? "&" : "§")}r`;
 
