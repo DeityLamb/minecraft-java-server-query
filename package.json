@@ -5,13 +5,11 @@
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
-        "lib/*",
-        "tsconfig.json"
+        "lib/*"
     ],
     "scripts": {
         "test": "jest --config jestconfig.json",
-        "build": "tsc",
-        "postinstall": "npm run build"
+        "build": "tsc -p tsconfig.json"
     },
     "repository": {
         "type": "git",
